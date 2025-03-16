@@ -13,11 +13,11 @@ pnpx prisma init
 #   id Int @id @default(autoincrement())
 # }
 pnpx prisma generate
-npx prisma migrate dev --name init
+pnpx prisma migrate dev --name init
 pnpm install @prisma/client
 pnpm approve-builds
 pnpx @better-auth/cli@latest generate --config "$SCRIPT_DIR/app/lib/auth.ts"
-npx prisma migrate dev --name auth
+pnpx prisma migrate dev --name auth
 
 # shadcn init
 pnpm dlx shadcn@latest init
