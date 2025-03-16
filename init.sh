@@ -3,7 +3,6 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 pnpm install
 pnpm approve-builds
 
-pnpx prisma init
 # The schema.prisma file must have a model defined to it can generate the client.
 # The model can be anything, but it must be there.
 # If the model is not defined, the client will not be generated.
@@ -20,4 +19,4 @@ pnpx @better-auth/cli@latest generate --config "$SCRIPT_DIR/app/lib/auth.ts"
 pnpx prisma migrate dev --name auth
 
 # shadcn init
-pnpm dlx shadcn@latest init
+# pnpm dlx shadcn@latest init
