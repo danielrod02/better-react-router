@@ -20,7 +20,7 @@ The template includes:
 ## Installation
 
 ```shellscript
-pnpx create-react-router@latest --template danielrod02/better-remix
+pnpx create-react-router@latest --template danielrod02/better-react-router
 ```
 ---
 
