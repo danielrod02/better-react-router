@@ -1,5 +1,25 @@
 # Welcome to React Router!
 
+The template includes:
+
+- Remix
+- Prisma
+- Better Auth
+- shadcn
+- clsx
+- Motion
+- Tanstack Query
+- Zustand
+- useHooks
+- React-i18next
+- Postgres (for development running as a **docker container**)
+
+## Installation
+
+```shellscript
+pnpx create-react-router@latest --template danielrod02/better-remix
+```
+
 A modern, production-ready template for building full-stack React applications using React Router.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
