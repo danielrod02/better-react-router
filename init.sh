@@ -12,6 +12,7 @@ pnpm approve-builds
 #   id Int @id @default(autoincrement())
 # }
 pnpx prisma generate
+$SCRIPT_DIR/database/create-container.sh &
 pnpx prisma migrate dev --name init
 pnpm install @prisma/client
 pnpm approve-builds
