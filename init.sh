@@ -17,6 +17,3 @@ pnpm install @prisma/client
 pnpm approve-builds
 pnpx @better-auth/cli@latest generate --config "$SCRIPT_DIR/app/lib/auth.ts"
 pnpx prisma migrate dev --name auth
-
-# shadcn init
-# pnpm dlx shadcn@latest init

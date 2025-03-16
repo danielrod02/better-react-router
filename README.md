@@ -1,5 +1,7 @@
 # React router template (w/ Better Auth & shadcn)
 
+**You must have docker installer on your system**
+
 The template includes:
 
 - Remix
