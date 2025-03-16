@@ -7,3 +7,5 @@
 
 .env
 /prisma/migrations/*
+
+/database/pg-db-data/*
