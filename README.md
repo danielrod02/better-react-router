@@ -9,6 +9,7 @@ The template includes:
 - clsx
 - Motion
 - Tanstack Query
+- Zod
 - Zustand
 - useHooks
 - React-i18next
@@ -19,6 +20,11 @@ The template includes:
 ```shellscript
 pnpx create-react-router@latest --template danielrod02/better-remix
 ```
+# Route specific types for loaders and actions
+
+It seems like React Router generates types for your routes when using file-based routing
+
+---
 
 A modern, production-ready template for building full-stack React applications using React Router.
 

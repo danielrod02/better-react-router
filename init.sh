@@ -20,4 +20,4 @@ pnpx @better-auth/cli@latest generate --config "$SCRIPT_DIR/app/lib/auth.ts"
 npx prisma migrate dev --name auth
 
 # shadcn init
-# pnpm dlx shadcn@latest init
+pnpm dlx shadcn@latest init
