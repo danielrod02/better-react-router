@@ -1,6 +1,5 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-pnpm install
 pnpm approve-builds
 
 # The schema.prisma file must have a model defined to it can generate the client.
