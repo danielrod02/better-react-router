@@ -1,4 +1,4 @@
-# Welcome to React Router!
+# React router template (w/ Better Auth & shadcn)
 
 The template includes:
 
@@ -20,15 +20,7 @@ The template includes:
 ```shellscript
 pnpx create-react-router@latest --template danielrod02/better-remix
 ```
-# Route specific types for loaders and actions
-
-It seems like React Router generates types for your routes when using file-based routing
-
 ---
-
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
 ## Features
 
@@ -38,24 +30,41 @@ A modern, production-ready template for building full-stack React applications u
 - 🔄 Data loading and mutations
 - 🔒 TypeScript by default
 - 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- 🔒 Authentication with `better-auth`
+- Animations with `Motion`
+- State management with `zustand`
+- Data fetching with `Tanstack Query`
+- Animations with 
+
+[React Router docs](https://reactrouter.com/)
 
 ## Getting Started
 
-### Installation
+### Generate project from template
 
-Install the dependencies:
-
-```bash
-npm install
+```shellscript
+pnpx create-react-router@latest danielrod02/better-react-router
 ```
+
+### Setup
+
+- Create `.env` file:
+```shellscript
+BETTER_AUTH_SECRET=<better-auth-secret>
+BETTER_AUTH_URL=<base-url> #Base URL of your app
+DATABASE_URL=postgres://betterrem:betterpasswd@localhost:32770/betterrem
+GOOGLE_CLIENT_ID=<google-client-id>
+GOOGLE_CLIENT_SECRET=<google-client-secret>
+```
+
+- ***Run the `init.sh` script to finish setting up `better-auth` and `shadcn`***
 
 ### Development
 
 Start the development server with HMR:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
@@ -65,7 +74,7 @@ Your application will be available at `http://localhost:5173`.
 Create a production build:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## Deployment
@@ -94,7 +103,7 @@ The containerized application can be deployed to any platform that supports Dock
 
 If you're familiar with deploying Node applications, the built-in app server is production-ready.
 
-Make sure to deploy the output of `npm run build`
+Make sure to deploy the output of `pnpm run build`
 
 ```
 ├── package.json
