@@ -58,8 +58,9 @@ DATABASE_URL=postgres://betterrem:betterpasswd@localhost:32770/betterrem
 GOOGLE_CLIENT_ID=<google-client-id>
 GOOGLE_CLIENT_SECRET=<google-client-secret>
 ```
-- Run `chmod +x init.sh`
-- ***Run the `init.sh` script to finish setting up `better-auth` and `shadcn`***
+
+- Run `pnpm run init` or `chmod +x init.sh`
+- ***Run the `init.sh` script to finish setting up `better-auth`***
 
 ### Development
 
