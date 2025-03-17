@@ -45,7 +45,7 @@ pnpx create-react-router@latest --template danielrod02/better-react-router
 ### Generate project from template
 
 ```shellscript
-pnpx create-react-router@latest danielrod02/better-react-router
+pnpx create-react-router@latest --template danielrod02/better-react-router
 ```
 
 ### Setup
