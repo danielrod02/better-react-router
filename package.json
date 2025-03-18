@@ -8,7 +8,8 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "init": "pnpm approve-builds && pnpx prisma generate && pnpx prisma migrate dev --name better-auth-init && pnpm install @prisma/client && pnpm approve-builds && pnpx @better-auth/cli@latest generate --config ./app/lib/auth.ts && pnpx prisma migrate dev --name auth",
-    "init-skip-migrate": "pnpm approve-builds && pnpx prisma generate && pnpm install @prisma/client && pnpm approve-builds && pnpx @better-auth/cli@latest generate --config ./app/lib/auth.ts"
+    "init-skip-migrate": "pnpm approve-builds && pnpx prisma generate && pnpm install @prisma/client && pnpm approve-builds && pnpx @better-auth/cli@latest generate --config ./app/lib/auth.ts",
+    "serve-in-linux": "env PORT=5173 react-router-serve ./build/server/index.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.3",
